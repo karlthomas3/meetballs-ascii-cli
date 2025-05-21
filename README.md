@@ -1,4 +1,8 @@
-# Go ascii converter
+# Welcome to the 'Go ASCII converter' Meetballs™ session!
+
+This is just a simple CLI application built with go to convert text into ASCII art.<br>
+I tried to keep it extremely short and simple (possibly **too** short) so it should be fun and easy even if you've never played with go before.<br>
+If we get through it way too quickly we can play with adding new features on the fly 😁
 
 ## Setup
 
