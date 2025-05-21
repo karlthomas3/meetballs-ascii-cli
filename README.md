@@ -64,13 +64,13 @@ args := flag.Args()
 }
 ```
 
-Now each space gets recognized as a new object so we need to get the strings not claimed by flags and combine them into one string
+Now each space gets recognized as a separate input so we need to get the strings not claimed by flags and combine them into one string
 
 ```go
 input := strings.Join(args, " ")
 ```
 
-Then from the go-figure library we're gonna use the NewFigure function to generate the ascii art.
+Then from the go-figure library we're gonna use the `NewFigure` function to generate the ASCII art.
 
 It takes three arguments:
 
@@ -84,7 +84,7 @@ Our text is coming from input, leave the font as "" for now
 myFigure := figure.NewFigure(input, "", false)
 ```
 
-The NewFigure will come with a Print() method which will output the ascii art to the console so all we have to do is:
+Our new `figure` will come with a `Print()` method which will output the ASCII art to the console so all we have to do is:
 
 ```go
 myFigure.Print()
@@ -121,7 +121,7 @@ func main() {
 
 In the terminal use `go build` and go will automatically compile a binary for your machine and os.
 
-Try running it with `./ascii Meetballs in your mouth!` and see for yourself.
+Try running it with `./ascii Salty Meetballs!` and see for yourself.
 If you're on windows you'll have to use `ascii.exe` instead of `./ascii`
 
 ## Now for fun with flags
@@ -145,7 +145,7 @@ Then change the second argument to our `figure.NewFigure()` call to `*font`
 myFigure := figure.NewFigure(input, *fontFlag, false)
 ```
 
-Now type `go build` and try `./ascii -font stop salty meetballs!`<br>
+Now type `go build` and try `./ascii -font stop your mom likes my meetballs!`<br>
 If you go to the go-figure repo (where we're imorting from) you can find all the available fonts. <a href="https://github.com/common-nighthawk/go-figure/tree/master/fonts">go-figure/fonts/</a>
 
 ## Time!
