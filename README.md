@@ -11,7 +11,7 @@ If we get through it way too quickly we can play with adding new features on the
 -   `go version`
 -   if you dont have go then:
 
--   `brew install go` or download from go.dev
+-   `brew install go` or download from https://go.dev
 
 ### Start a new go project
 
