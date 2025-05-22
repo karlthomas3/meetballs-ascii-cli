@@ -15,7 +15,7 @@ If we get through it way too quickly we can play with adding new features on the
 
 ### Start a new go project
 
--   `go mod init meetballs.com/go-cli`
+-   `go mod init meetballs.com/ascii`
 
 ### Instal dependencies
 
