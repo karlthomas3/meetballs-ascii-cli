@@ -119,7 +119,8 @@ func main() {
 }
 ```
 
-In the terminal use `go build` and go will automatically compile a binary for your machine and os.
+In the terminal use `go build` and go will automatically compile a binary for your machine and os.<br>
+Now if you look in your local files you should see `ascii`. The file is named from the `init` command before. It's `repo@location/programName`
 
 Try running it with `./ascii Salty Meetballs!` and see for yourself.
 If you're on windows you'll have to use `ascii.exe` instead of `./ascii`
